@@ -17,4 +17,8 @@ router.route('/secret')
 
 router.route('/oauth/google')
     .post(passport.authenticate('googleToken', { session: false }));
+
+router.route('/oauth/facebook')
+    .post(passport.authenticate('facebookToken', { session: false}));
+
 module.exports = router;
