@@ -14,5 +14,6 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/users', require('./routes/users'));
+app.use(express.static('helpers/privacy.html'));
 
 module.exports = app;
